@@ -23,7 +23,12 @@ class Time:
     # input: Time against which to compare
     # input: Another value to compare to the Time
     # output: boolean indicating equality
-
+    def __eq__(self, other:Any) -> bool:
+        return (other is self or
+                type(other) == Time and
+                math.isclose(self.hour, other.hour) and
+                math.isclose(self.minute, other.minute) and
+                math.isclose(self.second, other.second))
 
 
 
