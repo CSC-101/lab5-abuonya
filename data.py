@@ -13,7 +13,6 @@ class Time:
         self.minute = minute
         self.second = second
 
-
     # Provide a developer-friendly string representation of the object.
     # input: Time for which a string representation is desired. 
     # output: string representation
