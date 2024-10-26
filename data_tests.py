@@ -34,6 +34,10 @@ class TestCases(unittest.TestCase):
         self.assertNotEqual(time1, time2)
 
     #### Add tests for Time.__repr__
+    def test_Time_repr(self):
+        time = data.Time(11, 45,29)
+        self.assertEqual('Time(11, 45, 29)', repr(time))
+
 
 
     #### Point tests
