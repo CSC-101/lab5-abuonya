@@ -4,6 +4,7 @@ from data import Time
 
 
 
+
 # Write your test cases for each part below.
 
 class TestCases(unittest.TestCase):
@@ -29,9 +30,12 @@ class TestCases(unittest.TestCase):
         expected = Time(2,37,0)
         self.assertEqual(expected, result)
 
-
     # Part 4
-
+    def test_is_descending1(self):
+        list = [5,4,3,2,1]
+        result = lab5.is_descending(list)
+        expected = True
+        self.assertEqual(expected, result)
 
     # Part 5
 
