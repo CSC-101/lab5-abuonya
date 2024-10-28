@@ -19,7 +19,14 @@ class TestCases(unittest.TestCase):
         time1 = Time(4,50,55)
         time2 = Time(7,25,23)
         result = lab5.time_add(time1, time2)
-        expected = Time(11, 75, 78)
+        expected = Time(12, 16, 18)
+        self.assertEqual(expected, result)
+
+    def test_time_add2(self):
+        time1 = Time(1,30,30)
+        time2 = Time(1,6,30)
+        result = lab5.time_add(time1, time2)
+        expected = Time(2,37,0)
         self.assertEqual(expected, result)
 
 
