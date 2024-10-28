@@ -32,7 +32,7 @@ def time_add(time1: Time, time2: Time) -> float:
 
 # Part 4
 def is_descending(list: list[float]) -> float:
-    for idx in range(len(list)):
+    for idx in range(len(list) - 1):
         if idx > list[idx-1]:
             return False
     else:
