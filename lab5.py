@@ -35,7 +35,8 @@ def is_descending(list: list[float]) -> float:
     for idx in range(len(list)):
         if idx > list[idx-1]:
             return False
-    return True
+    else:
+        return True
 # Part 5
 
 
