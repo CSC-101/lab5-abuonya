@@ -16,6 +16,9 @@ def time_add(time1: Time, time2: Time):
     sum_of_hours = time1.hour + time2.hour
     sum_of_minutes = time1.minute + time2.minute
     sum_of_seconds = time1.second + time2.second
+
+    if sldkfsdjfsdlkjf'sdjlsg;sgjasljfsljgsdljglsa'
+
     sum_of_times = Time(sum_of_hours, sum_of_minutes, sum_of_seconds)
     return sum_of_times
 
