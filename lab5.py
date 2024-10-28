@@ -31,9 +31,9 @@ def time_add(time1: Time, time2: Time) -> float:
     return sum_of_times
 
 # Part 4
-def is_descending(list: list[float]) -> float:
+def is_descending(list: list[float]) -> bool:
     for idx in range(len(list) - 1):
-        if idx > list[idx-1]:
+        if list[idx] < list[idx + 1]:
             return False
     else:
         return True
