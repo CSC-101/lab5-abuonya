@@ -37,6 +37,19 @@ class TestCases(unittest.TestCase):
         expected = True
         self.assertEqual(expected, result)
 
+    def test_is_descending2(self):
+        list = []
+        result = lab5.is_descending(list)
+        expected = True
+        self.assertEqual(expected, result)
+
+    def test_is_descending3(self):
+        list = [6,9,40,1,4]
+        result = lab5.is_descending(list)
+        expected = False
+        self.assertEqual(expected, result)
+
+
     # Part 5
 
 
