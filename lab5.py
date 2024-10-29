@@ -41,6 +41,7 @@ def is_descending(list: list[float]) -> bool:
         return True
 # Part 5
 def largest_between (list: list[int], lower:int, upper:int) -> int:
+    # when it is negative
     if lower > upper:
         return None
 
@@ -53,12 +54,17 @@ def largest_between (list: list[int], lower:int, upper:int) -> int:
 
 # Part 6
 def furthest_from_origin(point: list[Point]) -> list:
+    # when list is empty
+    if point == []:
+        return None
+
     start = 0
     total_distance = point[0].x**2 + point[0].y**2
     for idx in range(len(point)):
-        distance = point[indx].x**2 ++ point[indx].y**2
+        distance = point[idx].x**2 ++ point[idx].y**2
         if distance > total_distance:
             total_distance = distance
-            start = index
-            \\\
+            start = idx
+    else:
+        return start
 
