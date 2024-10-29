@@ -1,7 +1,7 @@
 import lab5
 import unittest
 from data import Time
-
+from data import Point
 
 
 
@@ -67,6 +67,12 @@ class TestCases(unittest.TestCase):
         self.assertEqual(expected, result)
 
     # Part 6
+    def test_furthest_from_origin(self):
+        input = [Point(4,4),  Point(79, 87)]
+        result = lab5.furthest_from_origin(input)
+        expected = [(79,87)]
+        self.assertEqual(expected, result)
+
 
 
 
