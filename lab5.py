@@ -1,3 +1,5 @@
+from operator import index
+
 from data import Time
 from data import Point
 
@@ -51,6 +53,12 @@ def largest_between (list: list[int], lower:int, upper:int) -> int:
 
 # Part 6
 def furthest_from_origin(point: list[Point]) -> list:
+    start = 0
+    total_distance = point[0].x**2 + point[0].y**2
     for idx in range(len(point)):
-        distance = points[indx].x**2 ++ points[indx].y**2
-        if distance
+        distance = point[indx].x**2 ++ point[indx].y**2
+        if distance > total_distance:
+            total_distance = distance
+            start = index
+            \\\
+
