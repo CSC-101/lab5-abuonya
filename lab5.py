@@ -1,5 +1,5 @@
 from data import Time
-
+from data import Point
 
 # Write your functions for each part in the space below.
 
@@ -49,9 +49,8 @@ def largest_between (list: list[int], lower:int, upper:int) -> int:
     else:
         return largest_number
 
-
-
-
-
-
 # Part 6
+def furthest_from_origin(point: list[Point]) -> list:
+    for idx in range(len(point)):
+        distance = points[indx].x**2 ++ points[indx].y**2
+        if distance
