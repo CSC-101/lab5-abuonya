@@ -39,6 +39,9 @@ def is_descending(list: list[float]) -> bool:
         return True
 # Part 5
 def largest_between (list: list[int], lower:int, upper:int) -> int:
+    if lower > upper:
+        return None
+
     largest_number = lower
     for idx in range(lower, upper + 1):
         if list[idx] > list[largest_number]:
