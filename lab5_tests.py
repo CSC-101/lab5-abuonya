@@ -68,10 +68,17 @@ class TestCases(unittest.TestCase):
 
     # Part 6
     def test_furthest_from_origin(self):
-        input = [Point(4,4),  Point(79, 87)]
+        input = [Point(4,4),  Point(79, 87), Point(700, 700)]
         result = lab5.furthest_from_origin(input)
-        expected = [(79,87)]
+        expected = 2
         self.assertEqual(expected, result)
+
+    def test_furthest_from_origin(self):
+        input = [Point(4,4),  Point(79, 87), Point(700, 700)]
+        result = lab5.furthest_from_origin(input)
+        expected = 2
+        self.assertEqual(expected, result)
+
 
 
 
