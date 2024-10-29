@@ -53,9 +53,9 @@ class TestCases(unittest.TestCase):
     def test_largest_between1(self):
         list = ([1,2,3,4,5,6,7,8,9,10])
         a = 2
-        b = 10
+        b = 7
         result = lab5.largest_between(list, a, b)
-        expected = 10
+        expected = 8
         self.assertEqual(expected, result)
 
 
